@@ -51,6 +51,21 @@ RUN apt-get update && apt-get -y install \
     libpcap-dev \
     libpcap0.8 \
     libpcap0.8-dev \
+    git-core \
+    autoconf \
+    curl \
+    zlib1g-dev \
+    zlib1g \
+    libxml2 \
+    libxml2-dev \
+    libxslt1-dev \
+    locate \
+#    vncviewer \
+    libyaml-dev \
+#    tmux \
+    iptables \
+#    nano \
+#    proxychains \
     #cleaning
     && rm -rf /var/lib/apt/lists/*
 
