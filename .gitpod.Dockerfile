@@ -41,11 +41,11 @@ RUN mkdir -p /pentest
 WORKDIR /pentest
 
 # nmap
-RUN cd /pentest && git clone --depth=1 https://github.com/nmap/nmap.git \
-    && cd nmap && ./configure && make && make install && make clean
+#RUN cd /pentest && git clone --depth=1 https://github.com/nmap/nmap.git \
+#    && cd nmap && ./configure && make && make install && make clean
 
 # sqlmap
-RUN cd /pentest && git clone --depth=1 https://github.com/sqlmapproject/sqlmap.git
+#RUN cd /pentest && git clone --depth=1 https://github.com/sqlmapproject/sqlmap.git
 
 # nikto
-RUN cd /pentest && git clone --depth=1 https://github.com/sullo/nikto.git
+#RUN cd /pentest && git clone --depth=1 https://github.com/sullo/nikto.git
