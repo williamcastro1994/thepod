@@ -66,6 +66,7 @@ RUN apt-get update && apt-get -y install \
     iptables \
 #    nano \
     proxychains \
+    python-pip \
     #cleaning
     && rm -rf /var/lib/apt/lists/*
 
