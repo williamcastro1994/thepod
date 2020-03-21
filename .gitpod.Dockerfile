@@ -70,10 +70,10 @@ RUN apt-get update && apt-get -y install \
     #cleaning
     && rm -rf /var/lib/apt/lists/*
 
-
-
 RUN mkdir -p /pentest
 WORKDIR /pentest
+
+RUN pip install setuptools
 
 # nmap
 RUN cd /pentest && git clone --depth=1 https://github.com/nmap/nmap.git \
