@@ -65,7 +65,7 @@ RUN apt-get update && apt-get -y install \
 #    tmux \
     iptables \
 #    nano \
-#    proxychains \
+    proxychains \
     #cleaning
     && rm -rf /var/lib/apt/lists/*
 
