@@ -44,10 +44,6 @@ WORKDIR /pentest
 RUN cd /pentest && git clone --depth=1 https://github.com/nmap/nmap.git \
     && cd nmap && ./configure && make && make install && make clean
 
-# metasploit
-RUN cd /pentest && git clone --depth=1 https://github.com/rapid7/metasploit-framework.git \
-    && cd metasploit-framework && bundle install
-
 # sqlmap
 RUN cd /pentest && git clone --depth=1 https://github.com/sqlmapproject/sqlmap.git
 
