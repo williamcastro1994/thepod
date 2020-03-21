@@ -1,4 +1,4 @@
-FROM ruby:2.1
+FROM ruby:2.5
 
 RUN apt-get update && apt-get -y install \
     --no-install-recommends \
