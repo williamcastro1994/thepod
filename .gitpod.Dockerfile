@@ -1,5 +1,42 @@
 FROM ruby:2.5
 
+#RUN apt-get update && apt-get -y install \
+#    --no-install-recommends \
+#    build-essential \
+#    libreadline-dev \
+#    libssl-dev \
+#    libpq5 \
+#    libpq-dev \
+#    libreadline5 \
+#    libsqlite3-dev \
+#    bison \
+#    libbison-dev \
+#    libpcap-dev \
+#    libpcap0.8 \
+#    libpcap0.8-dev \
+#    postgresql-client \
+#    wget \
+#    bzip2 \
+#    libpcap-dev \
+#    git-core \
+#    autoconf \
+#    curl \
+#    zlib1g-dev \
+#    zlib1g \
+#    libxml2 \
+#    libxml2-dev \
+#    libxslt1-dev \
+#    locate \
+#    vncviewer \
+#    libyaml-dev \
+#    tmux \
+#    iptables \
+#    nano \
+#    proxychains \
+#    # nikto dependencies
+#    libnet-ssleay-perl libauthen-pam-perl libio-pty-perl libdigest-md5-file-perl
+#    && rm -rf /var/lib/apt/lists/*
+
 RUN apt-get update && apt-get -y install \
     --no-install-recommends \
     build-essential \
@@ -14,28 +51,10 @@ RUN apt-get update && apt-get -y install \
     libpcap-dev \
     libpcap0.8 \
     libpcap0.8-dev \
-    postgresql-client \
-    wget \
-    bzip2 \
-    libpcap-dev \
-    git-core \
-    autoconf \
-    curl \
-    zlib1g-dev \
-    zlib1g \
-    libxml2 \
-    libxml2-dev \
-    libxslt1-dev \
-    locate \
-    vncviewer \
-    libyaml-dev \
-    tmux \
-    iptables \
-    nano \
-    proxychains \
-    # nikto dependencies
-    libnet-ssleay-perl libauthen-pam-perl libio-pty-perl libdigest-md5-file-perl
-#    && rm -rf /var/lib/apt/lists/*
+    #cleaning
+    && rm -rf /var/lib/apt/lists/*
+
+
 
 RUN mkdir -p /pentest
 WORKDIR /pentest
